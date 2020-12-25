@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Computational Science Laboratory
 description: Computational Science Laboratory's website
+show_downloads: "false"
