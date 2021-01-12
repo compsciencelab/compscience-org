@@ -1,4 +1,12 @@
 theme: jekyll-theme-cayman
 title: Computational Science Laboratory
-description: Computational Science Laboratory's website
+description: Computation applied to Science
+introduction: >-
+  Our research interests are rooted in the application of computation
+  to solve real world problems, based on the view that computation and
+  intelligence are very much the same thing. Specifically, we develop new
+  methods, programs and algorithms that we apply to areas such as AI, drug
+  design, and protein folding. The group and its spin-off company Acellera has collaborated
+  with major industries worldwide like Sony, Nvidia, HTC mobile, UCB, Pfizer,
+  Biogen, Novartis, etc.
 show_downloads: "false"

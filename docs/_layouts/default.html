@@ -23,14 +23,18 @@
     <header class="page-header2" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       {% include nav.html %}
-      <!--
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      -->
     </header>
 
+    <main id="tagline" class="main-content" role="main">
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <img class="logo" src="{{ site.baseurl }}/assets/img/LOGO_PM_basic.jpg" alt="logo" />
+    </main>
     <main id="content" class="main-content" role="main">
-      {{ content }}
-
+      <div class="home-text"> {{ page.introduction | default: site.introduction }} </div>
+      <img class="down-arrow" src="{{ site.baseurl }}/assets/img/keyboard_arrow_down-black-24dp.svg" alt="logo" />
+      <!--
+      <div class="home-text"> {{ content }} </div>
+      -->
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
