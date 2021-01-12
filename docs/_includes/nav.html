@@ -1,0 +1,12 @@
+<!-- Belongs at: /_includes/nav.html -->
+
+<!-- Then we build the nav bar. -->
+<nav>
+    <ul class="nav-menu">
+    {% for entry in site.data.nav %}
+        <li class="nav-list-item" {{ current }}>
+            <a class="nav-link" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

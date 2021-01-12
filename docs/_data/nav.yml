@@ -1,0 +1,12 @@
+# Belongs at: /_data/navigation.yml
+
+- title: Home
+  url: /
+- title: Research
+  url: /research/
+- title: Apply
+  url: /apply/
+- title: Publications
+  url: /publications/
+- title: Contact
+  url: /contact/

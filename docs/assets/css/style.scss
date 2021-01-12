@@ -5,8 +5,15 @@
 .page-header2 {
   color: $header-heading-color;
   text-align: left;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-color: $header-bg-color-secondary;
+  padding: 1rem 1rem !important;
+  width: 100%;
+
+  .project-name {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    display: inline-block;
+  }
 
   @include large {
     padding: 5rem 6rem;
@@ -19,4 +26,35 @@
   @include small {
     padding: 2rem 1rem;
   }
+}
+
+/* Navigation wrapper */
+
+nav {
+  padding: 0.5rem;
+  padding-left: 40%;
+  z-index: 2;
+  overflow-y: visible;
+  display: inline-block;
+}
+
+.nav-menu {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list-item {
+  display: inherit;
+  margin-left: 1rem;
+}
+
+a.nav-link:link, a.nav-link:visited {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+a.nav-link:hover, a.nav-link:active {
+  color: grey;
 }
