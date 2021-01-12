@@ -4,9 +4,7 @@ You can use the [editor on GitHub](https://github.com/compsciencelab/compscience
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Local Development
-
-# Installation
+### Local Installation
 
 Follow the instructions [here](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll) to install dependencies
 
@@ -16,7 +14,7 @@ Navigate to the server address, and everything should be set.
 
 While struggling to get this running, I also followed instructions [here](https://kbroman.org/simple_site/pages/local_test.html). So if the above doesn't work, try following that one as well.
 
-# General Method for Quick Styling
+### General Method for Quick Styling
 
 Once I have a local server running, I generally test CSS changes using the Chrome Development Tools (right-click > Inspect) because the changes are instantaneous.
 
