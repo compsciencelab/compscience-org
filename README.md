@@ -4,6 +4,22 @@ You can use the [editor on GitHub](https://github.com/compsciencelab/compscience
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+### Local Installation
+
+Follow the instructions [here](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll) to install dependencies
+
+Clone this repo, navigate to `docs` directory, and run `jekyll serve`
+
+Navigate to the server address, and everything should be set.
+
+While struggling to get this running, I also followed instructions [here](https://kbroman.org/simple_site/pages/local_test.html). So if the above doesn't work, try following that one as well.
+
+### General Method for Quick Styling
+
+Once I have a local server running, I generally test CSS changes using the Chrome Development Tools (right-click > Inspect) because the changes are instantaneous.
+
+Once I've got things looking how I want, I copy the new CSS rules over to `style.scss`, add a good selector (like the element-type and class), and reload and refresh the local server to make sure it worked.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
