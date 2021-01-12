@@ -27,3 +27,34 @@
     padding: 2rem 1rem;
   }
 }
+
+/* Navigation wrapper */
+
+nav {
+  padding: 0.5rem;
+  padding-left: 30%;
+  z-index: 2;
+  overflow-y: visible;
+  display: inline-block;
+}
+
+.nav-menu {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list-item {
+  display: inherit;
+  margin-left: 1rem;
+}
+
+a.nav-link:link, a.nav-link:visited {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+}
+
+a.nav-link:hover, a.nav-link:active {
+  color: grey;
+}
