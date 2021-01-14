@@ -43,6 +43,13 @@ html {
   background-color: rgb(245, 245, 245);
 }
 
+#research.main-content {
+  max-width: none;
+  margin: 0;
+  padding: 2rem 10rem;
+  padding-top: 0;
+}
+
 div.home-text {
   color: #000050;
   font-size: 1.5rem;
@@ -50,7 +57,7 @@ div.home-text {
   font-weight: bold;
 }
 
-.highlights-title {
+.section-title {
   color: #000050;
   font-weight: bolder;
   font-size: 2.5rem;
@@ -61,7 +68,7 @@ div.home-text {
   opacity: 1;
 }
 
-.highlights-container {
+.section-container {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2rem;
