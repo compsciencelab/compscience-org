@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link href="//cdn.jsdelivr.net/gh/zkreations/tooltips@3/tooltips.min.css" rel="stylesheet">
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+    <a name=home></a>
     <header class="page-header2" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       {% include nav.html %}
@@ -29,19 +31,55 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <img class="logo" src="{{ site.baseurl }}/assets/img/LOGO_PM_basic.jpg" alt="logo" />
     </main>
-    <main id="content" class="main-content" role="main">
+    <main id="intro" class="main-content" role="main">
       <div class="home-text"> {{ page.introduction | default: site.introduction }} </div>
       <img class="down-arrow" src="{{ site.baseurl }}/assets/img/keyboard_arrow_down-black-24dp.svg" alt="logo" />
-      <!--
-      <div class="home-text"> {{ content }} </div>
-      -->
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">Test <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
     </main>
+    <main id="highlights" class="main-content" role="main">
+      <a name=highlights></a>
+      <h2 class="highlights-title"> Highlights </h2>
+      <div class="highlights-container">
+          <div class="highlights-text">PlayMolecule is a platform for drug discovery and structural biology applications based on physics-based simulations and deep learning. Try it out <a href=http://www.playmolecule.org> here </a></div>
+          <div class="highlights-text">Unity Obstacle Tower RL challenge. We classified second at the Unity obstacle tower challenge, where an agent had to navigate a complex 3D environment and solve tasks. Here is the agent in action: <a href=https://www.youtube.com/watch?v=EpYLRZHKmBs&t=30s>Video</a>, and the Unity <a href=https://blogs.unity3d.com/2019/08/07/announcing-the-obstacle-tower-challenge-winners-and-open-source-release/>blog</a> post here </div>
+          <div class="highlights-text">LogP SAMPL 2019 challenge. We scored second to the logP small molecule blind prediction challenge</div>
+          <div class="highlights-text">D3R 2018 challenge. We won two sub-challenges in the D3R 2018 drug discovery blind challenge in collaboration with Acellera related to binding affinity and pose prediction of protein-ligand complexes</div>
+      </div>
+      <div class="highlights-container">
+        <div class="highlight-icon-container tts:right" aria-label="In 2015 we relased the HTMD Python environment for simulation-based molecular discovery">
+          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/cached-black-24dp.svg" alt="logo" />
+          <div> High-throughput molecular dynamics </div>
+        </div>
+        <div class="highlight-icon-container tts" aria-label="Since 2006 ACEMD has pioneered the use of acellerator processors for general purpose molecular simulations">
+          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/schedule-black-24dp.svg" alt="logo" />
+          <div> Molecular dynamics engine on GPUs </div>
+        </div>
+        <div class="highlight-icon-container  tts" aria-label="GPUGRID.net is currently one of the two largest distributing computing project worldwide">
+          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/fast_forward-black-24dp.svg" alt="logo" />
+          <div> Distributed computing </div>
+        </div>
+        <div class="highlight-icon-container  tts" aria-label="Acellera Ltd is a spin-off created in 2006 to accelerate the transition to simulation-based discovery in drug discovery">
+          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/trending_up-black-24dp.svg" alt="logo" />
+          <div> Industrial spin-offs </div>
+        </div>
+        <div class="highlight-icon-container  tts" aria-label="Everybody can access most of our tools and predictors via playmolecule.org">
+          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/favorite_border-black-24dp.svg" alt="logo" />
+          <div> Community access </div>
+        </div>
+        <div class="highlight-icon-container  tts:left" aria-label="We have published over 80 research articles">
+          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/publish-black-24dp.svg" alt="logo" />
+          <div> Scientific publications </div>
+        </div>
+      </div>
+    </main>
+    <!--
+    <div class="home-text"> {{ content }} </div>
+    -->
+    <footer class="site-footer">
+      {% if site.github.is_project_page %}
+        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      {% endif %}
+      <span class="site-footer-credits">Test <a href="https://pages.github.com">GitHub Pages</a>.</span>
+    </footer>
   </body>
 </html>
 
