@@ -5,7 +5,7 @@
     <ul class="nav-menu">
     {% for entry in site.data.nav %}
         <li class="nav-list-item" {{ current }}>
-            <a class="nav-link" href="#{{ entry.url }}">{{ entry.title }}</a>
+            <a class="nav-link" href="#{{ entry.anchor }}">{{ entry.title }}</a>
         </li>
     {% endfor %}
     </ul>
