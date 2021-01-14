@@ -2,6 +2,10 @@
 ---
 @import "{{ site.theme }}";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page-header2 {
   color: $header-heading-color;
   text-align: left;
