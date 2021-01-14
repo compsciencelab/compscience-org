@@ -6,14 +6,22 @@
   color: $header-heading-color;
   text-align: left;
   background-color: #000050;
-  padding: 0.25rem !important;
+  padding: 0.5rem 1rem !important;
   width: 100%;
+  height: 3.5rem;
+  position: fixed;
+  top: 0;
 
   .project-name {
     font-size: 1.4rem;
-    padding: 0.5rem;
-    display: inline-block;
+    display: inline;
+    margin: 0;
+    margin-left: 1rem;
   }
+}
+
+#tagline.main-content {
+  padding-top: 3.75rem;
 }
 
 #content.main-content {
@@ -62,11 +70,10 @@ img.down-arrow {
 /* Navigation wrapper */
 
 nav {
-  padding: 0.5rem;
   padding-left: 40%;
   z-index: 2;
-  overflow-y: visible;
-  display: inline-block;
+  overflow-y: hidden;
+  display: inline;
 }
 
 .nav-menu {
