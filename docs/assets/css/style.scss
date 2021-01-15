@@ -48,6 +48,34 @@ html {
   margin: 0;
   padding: 2rem 10rem;
   padding-top: 0;
+
+  .section-container.research-lines {
+    border-radius: 2rem;
+    background-color:rgb(245, 245, 245);
+    margin-bottom: 0;
+  }
+
+  .section-text {
+    width: 45%;
+
+    h3.section-subtitle {
+      font-size: 1.8rem;
+      font-weight: bolder;
+      color: #000050;
+      margin-bottom: 0;
+    }
+
+    h3.software-subtitle {
+        margin-bottom: -0.5rem;
+    }
+
+    .section-subtext-container {
+      margin: 1rem;
+      border-radius: 1rem;
+      background-color: rgb(245, 245, 245);
+      padding: 0.75rem;
+    }
+  }
 }
 
 div.home-text {

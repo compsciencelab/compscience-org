@@ -9,4 +9,33 @@ introduction: >-
   design, and protein folding. The group and its spin-off company Acellera has collaborated
   with major industries worldwide like Sony, Nvidia, HTC mobile, UCB, Pfizer,
   Biogen, Novartis, etc.
+research:
+  research_lines:
+    left_title: Biomedicine
+    left_text: We use computations, as physics-based simulations and machine learning to provide novel, innovative approaches in biomedicine
+    right_title: Machine Intelligence
+    right_text: We develop machine learning models with the aim to attain in specific environments intelligent, useful behavior using reinforcement learning and deep learning
+  software:
+    left_title: Software
+    left_text:
+      - link: HTMD
+        url: https://www.htmd.org/
+        text: is a Python platform for computational biology, including molecular simulations, docking, Markov state models, molecule manipulation, build tools for Amber and Charmm, visualization (webGL and VMD), adaptive sampling and more. Imagine setting up an entire computational experiment in a single, simple Python script.
+      - link: ACEMD
+        url: https://www.acellera.com/acemd
+        text: has pioneered the use of GPUs for molecular simulations allowing for high-throughput simulations and ultimately leading to HTMD. ACEMD is still one of top molecular dynamics code, simple to use with a NAMD like syntax and compatible with input files from Charmm and Amber.
+    right_title: Web Resources
+    right_text:
+      - link: Playmolecule
+        url: https://www.playmolecule.org/
+        text: is a WebGL-enabled site that contains our methods, predictors and machine learning approaches, most of which are publically available.
+      - link: Computational Science Laboratory GitHub
+        url: https://github.com/compsciencelab
+        text: contains more tools. Follow us there.
+      - link: HTMD Github Repository
+        url: https://github.com/acellera/htmd
+        text: is the main HTMD repository publicly accessible in Github. Contribute!
+      - link: Acellera YouTube Channel
+        url: https://www.youtube.com/user/acelleralive
+        text: contains posts from Acellera with a lot of useful material.
 show_downloads: "false"
