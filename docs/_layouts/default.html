@@ -82,7 +82,7 @@ layout: header
         <h3 class="section-subtitle"> Open Positions </h3>
         {% for subtext in site.apply.positions.open %}
           <div class="section-subtext-container">
-            <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+            <a href="/positions/#{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
           </div>
         {% endfor %}
         </div>
@@ -91,7 +91,7 @@ layout: header
         {{ site.apply.positions.closed.text }}
         {% for subtext in site.apply.positions.closed.positions %}
           <div class="section-subtext-container">
-            <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+            <a href="/positions/#{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
           </div>
         {% endfor %}
         </div>
