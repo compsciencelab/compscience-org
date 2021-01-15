@@ -6,7 +6,7 @@
     {% for entry in site.data.nav %}
         {% if page.url != "/publications/" or entry.title != "Publications" %}
         <li class="nav-list-item" {{ current }}>
-            <a class="nav-link" href="{% if page.url == "/publications/" %}/{% endif %}{% if entry.title != "Publications" %}#{% endif %}{{ entry.anchor }}">{{ entry.title }}</a>
+            <a class="nav-link" href="{% if page.url != "/" and entry.title !="Publications" %}/{% endif %}{% if entry.title != "Publications" %}#{% endif %}{{ entry.anchor }}">{{ entry.title }}</a>
         </li>
         {% endif %}
     {% endfor %}
