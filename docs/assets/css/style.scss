@@ -267,3 +267,12 @@ a.nav-link:hover, a.nav-link:active {
   max-width: 30%;
   max-height: 90%;
 }
+
+.publications-container {
+  padding: 3.5rem 2rem;
+  font-size: 1rem;
+
+  li {
+    margin-bottom: 0.5em;
+  }
+}
