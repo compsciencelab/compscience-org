@@ -239,3 +239,31 @@ a.nav-link:link, a.nav-link:visited {
 a.nav-link:hover, a.nav-link:active {
   color: grey;
 }
+
+.site-footer {
+  background-color: #000050;
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-container {
+  width: calc(100%/3);
+  text-align: center;
+}
+
+.facebook-icon {
+  max-width: 30%;
+  max-height: 90%;
+}
+
+.twitter-icon {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.youtube-icon {
+  max-width: 30%;
+  max-height: 90%;
+}
