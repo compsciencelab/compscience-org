@@ -22,11 +22,32 @@
   </head>
 
 <body>
-    <header class="page-header2" role="banner">
-        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        {% include nav.html %}
-      </header>
+  <header class="page-header2" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      {% include nav.html %}
+  </header>
 
-    {{ content }}
+  {{ content }}
+
+  <footer class="site-footer">
+    {% if site.github.is_project_page %}
+      <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+    {% endif %}
+    <div class="footer-container">
+      <a href="https://www.facebook.com/gpugrid/">
+        <img class="facebook-icon" src="{{ site.baseurl }}/assets/img/f_logo_RGB-White_58.png" />
+      </a>
+    </div>
+    <div class="footer-container">
+      <a href="https://twitter.com/gdefabritiis">
+        <img class="twitter-icon" src="{{ site.baseurl }}/assets/img/Twitter_Logo_White.png" />
+      </a>
+    </div>
+    <div class="footer-container">
+      <a href="https://www.youtube.com/user/ps3grid">
+        <img class="youtube-icon" src="{{ site.baseurl }}/assets/img/yt_icon_mono_dark.png" />
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
