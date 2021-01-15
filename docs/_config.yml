@@ -63,4 +63,7 @@ apply:
         - link: PhD position
           url: https://compscience.org/index.php/phd-position-in-rational-drug-design-of-intrinsically-disordered-proteins/
           text: in intrinsically disordered proteins
+contact:
+  text: Gianni De Fabritiis, GRIB, Barcelona Biomedical Research Park (PRBB), C/ Dr. Aiguader 88, 08003, Barcelona, Spain.
+  email: gianni.defabritiis at upf.edu
 show_downloads: "false"
