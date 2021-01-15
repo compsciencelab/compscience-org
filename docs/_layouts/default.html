@@ -1,151 +1,136 @@
-<!DOCTYPE html>
-<link href="//cdn.jsdelivr.net/gh/zkreations/tooltips@3/tooltips.min.css" rel="stylesheet">
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
-
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <a name=home></a>
-    <header class="page-header2" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      {% include nav.html %}
-    </header>
-
-    <main id="tagline" class="main-content" role="main">
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <img class="logo" src="{{ site.baseurl }}/assets/img/LOGO_PM_basic.jpg" alt="logo" />
-    </main>
-    <main id="intro" class="main-content" role="main">
-      <div class="home-text"> {{ page.introduction | default: site.introduction }} </div>
-      <img class="down-arrow" src="{{ site.baseurl }}/assets/img/keyboard_arrow_down-black-24dp.svg" alt="logo" />
-    </main>
-    <main id="highlights" class="main-content" role="main">
-      <a name=highlights></a>
-      <h2 class="section-title"> Highlights </h2>
-      <div class="section-container">
-          <div class="section-text">PlayMolecule is a platform for drug discovery and structural biology applications based on physics-based simulations and deep learning. Try it out <a href=http://www.playmolecule.org> here </a></div>
-          <div class="section-text">Unity Obstacle Tower RL challenge. We classified second at the Unity obstacle tower challenge, where an agent had to navigate a complex 3D environment and solve tasks. Here is the agent in action: <a href=https://www.youtube.com/watch?v=EpYLRZHKmBs&t=30s>Video</a>, and the Unity <a href=https://blogs.unity3d.com/2019/08/07/announcing-the-obstacle-tower-challenge-winners-and-open-source-release/>blog</a> post here </div>
-          <div class="section-text">LogP SAMPL 2019 challenge. We scored second to the logP small molecule blind prediction challenge</div>
-          <div class="section-text">D3R 2018 challenge. We won two sub-challenges in the D3R 2018 drug discovery blind challenge in collaboration with Acellera related to binding affinity and pose prediction of protein-ligand complexes</div>
-      </div>
-      <div class="section-container">
-        <div class="highlight-icon-container tts:right" aria-label="In 2015 we relased the HTMD Python environment for simulation-based molecular discovery">
-          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/cached-black-24dp.svg" alt="logo" />
-          <div> High-throughput molecular dynamics </div>
+---
+layout: header
+---
+<main id="tagline" class="main-content" role="main">
+  <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+  <img class="logo" src="{{ site.baseurl }}/assets/img/LOGO_PM_basic.jpg" alt="logo" />
+</main>
+<main id="intro" class="main-content" role="main">
+  <div class="home-text"> {{ page.introduction | default: site.introduction }} </div>
+  <img class="down-arrow" src="{{ site.baseurl }}/assets/img/keyboard_arrow_down-black-24dp.svg" alt="logo" />
+</main>
+<main id="highlights" class="main-content" role="main">
+  <a name=highlights></a>
+  <h2 class="section-title"> Highlights </h2>
+  <div class="section-container">
+      <div class="section-text">PlayMolecule is a platform for drug discovery and structural biology applications based on physics-based simulations and deep learning. Try it out <a href=http://www.playmolecule.org> here </a></div>
+      <div class="section-text">Unity Obstacle Tower RL challenge. We classified second at the Unity obstacle tower challenge, where an agent had to navigate a complex 3D environment and solve tasks. Here is the agent in action: <a href=https://www.youtube.com/watch?v=EpYLRZHKmBs&t=30s>Video</a>, and the Unity <a href=https://blogs.unity3d.com/2019/08/07/announcing-the-obstacle-tower-challenge-winners-and-open-source-release/>blog</a> post here </div>
+      <div class="section-text">LogP SAMPL 2019 challenge. We scored second to the logP small molecule blind prediction challenge</div>
+      <div class="section-text">D3R 2018 challenge. We won two sub-challenges in the D3R 2018 drug discovery blind challenge in collaboration with Acellera related to binding affinity and pose prediction of protein-ligand complexes</div>
+  </div>
+  <div class="section-container">
+    <div class="highlight-icon-container tts:right" aria-label="In 2015 we relased the HTMD Python environment for simulation-based molecular discovery">
+      <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/cached-black-24dp.svg" alt="logo" />
+      <div> High-throughput molecular dynamics </div>
+    </div>
+    <div class="highlight-icon-container tts" aria-label="Since 2006 ACEMD has pioneered the use of acellerator processors for general purpose molecular simulations">
+      <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/schedule-black-24dp.svg" alt="logo" />
+      <div> Molecular dynamics engine on GPUs </div>
+    </div>
+    <div class="highlight-icon-container  tts" aria-label="GPUGRID.net is currently one of the two largest distributing computing project worldwide">
+      <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/fast_forward-black-24dp.svg" alt="logo" />
+      <div> Distributed computing </div>
+    </div>
+    <div class="highlight-icon-container  tts" aria-label="Acellera Ltd is a spin-off created in 2006 to accelerate the transition to simulation-based discovery in drug discovery">
+      <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/trending_up-black-24dp.svg" alt="logo" />
+      <div> Industrial spin-offs </div>
+    </div>
+    <div class="highlight-icon-container  tts" aria-label="Everybody can access most of our tools and predictors via playmolecule.org">
+      <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/favorite_border-black-24dp.svg" alt="logo" />
+      <div> Community access </div>
+    </div>
+    <div class="highlight-icon-container  tts:left" aria-label="We have published over 80 research articles">
+      <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/publish-black-24dp.svg" alt="logo" />
+      <div> Scientific publications </div>
+    </div>
+  </div>
+</main>
+<main id="research" class="main-content" role="main">
+  <a name=research></a>
+  <h2 class="section-title"> Research </h2>
+  <div class="section-container research-lines">
+      <div class="section-text"> <h3 class="section-subtitle">{{ site.research.research_lines.left_title }} </h3> {{ site.research.research_lines.left_text }} </div>
+      <div class="section-text"> <h3 class="section-subtitle">{{ site.research.research_lines.right_title }} </h3> {{ site.research.research_lines.right_text }} </div>
+  </div>
+  <div class="section-container">
+      <div class="section-text">
+        <h3 class="section-subtitle software-subtitle">{{ site.research.software.left_title }} </h3>
+        {% for subtext in site.research.software.left_text %}
+          <div class="section-subtext-container">
+            <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+          </div>
+        {% endfor %}
         </div>
-        <div class="highlight-icon-container tts" aria-label="Since 2006 ACEMD has pioneered the use of acellerator processors for general purpose molecular simulations">
-          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/schedule-black-24dp.svg" alt="logo" />
-          <div> Molecular dynamics engine on GPUs </div>
+      <div class="section-text">
+        <h3 class="section-subtitle software-subtitle">{{ site.research.software.right_title }} </h3>
+        {% for subtext in site.research.software.right_text %}
+          <div class="section-subtext-container">
+            <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+          </div>
+        {% endfor %}
         </div>
-        <div class="highlight-icon-container  tts" aria-label="GPUGRID.net is currently one of the two largest distributing computing project worldwide">
-          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/fast_forward-black-24dp.svg" alt="logo" />
-          <div> Distributed computing </div>
+  </div>
+</main>
+<main id="apply" class="main-content" role="main">
+  <a name=apply></a>
+  <h2 class="section-title"> Apply </h2>
+  <div class="section-container">
+      <div class="section-text"> {{ site.apply.text }} </div>
+  </div>
+  <div class="section-container">
+      <div class="section-text">
+        <h3 class="section-subtitle"> Open Positions </h3>
+        {% for subtext in site.apply.positions.open %}
+          <div class="section-subtext-container">
+            <a href="/positions/#{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+          </div>
+        {% endfor %}
         </div>
-        <div class="highlight-icon-container  tts" aria-label="Acellera Ltd is a spin-off created in 2006 to accelerate the transition to simulation-based discovery in drug discovery">
-          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/trending_up-black-24dp.svg" alt="logo" />
-          <div> Industrial spin-offs </div>
+      <div class="section-text">
+        <h3 class="section-subtitle"> Closed Positions </h3>
+        {{ site.apply.positions.closed.text }}
+        {% for subtext in site.apply.positions.closed.positions %}
+          <div class="section-subtext-container">
+            <a href="/positions/#{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+          </div>
+        {% endfor %}
         </div>
-        <div class="highlight-icon-container  tts" aria-label="Everybody can access most of our tools and predictors via playmolecule.org">
-          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/favorite_border-black-24dp.svg" alt="logo" />
-          <div> Community access </div>
-        </div>
-        <div class="highlight-icon-container  tts:left" aria-label="We have published over 80 research articles">
-          <img class="highlight-icon" src="{{ site.baseurl }}/assets/img/publish-black-24dp.svg" alt="logo" />
-          <div> Scientific publications </div>
-        </div>
-      </div>
-    </main>
-    <main id="research" class="main-content" role="main">
-      <a name=research></a>
-      <h2 class="section-title"> Research </h2>
-      <div class="section-container research-lines">
-          <div class="section-text"> <h3 class="section-subtitle">{{ site.research.research_lines.left_title }} </h3> {{ site.research.research_lines.left_text }} </div>
-          <div class="section-text"> <h3 class="section-subtitle">{{ site.research.research_lines.right_title }} </h3> {{ site.research.research_lines.right_text }} </div>
-      </div>
-      <div class="section-container">
-          <div class="section-text">
-            <h3 class="section-subtitle software-subtitle">{{ site.research.software.left_title }} </h3>
-            {% for subtext in site.research.software.left_text %}
-              <div class="section-subtext-container">
-                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
-              </div>
-            {% endfor %}
-            </div>
-          <div class="section-text">
-            <h3 class="section-subtitle software-subtitle">{{ site.research.software.right_title }} </h3>
-            {% for subtext in site.research.software.right_text %}
-              <div class="section-subtext-container">
-                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
-              </div>
-            {% endfor %}
-            </div>
-      </div>
-    </main>
-    <main id="apply" class="main-content" role="main">
-      <a name=apply></a>
-      <h2 class="section-title"> Apply </h2>
-      <div class="section-container">
-          <div class="section-text"> {{ site.apply.text }} </div>
-      </div>
-      <div class="section-container">
-          <div class="section-text">
-            <h3 class="section-subtitle"> Open Positions </h3>
-            {% for subtext in site.apply.positions.open %}
-              <div class="section-subtext-container">
-                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
-              </div>
-            {% endfor %}
-            </div>
-          <div class="section-text">
-            <h3 class="section-subtitle"> Closed Positions </h3>
-            {{ site.apply.positions.closed.text }}
-            {% for subtext in site.apply.positions.closed.positions %}
-              <div class="section-subtext-container">
-                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
-              </div>
-            {% endfor %}
-            </div>
-      </div>
-    </main>
-    <main id="contact" class="main-content" role="main">
-      <a name=contact></a>
-      <h2 class="section-title"> Contact </h2>
-      <div class="section-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4776135518086!2d2.1917707507204662!3d41.38543297916256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a30609f1eee1%3A0x81e449abea5aae0e!2sPRBB+Parc+de+Recerca+Biom%C3%A8dica+de+Barcelona!5e0!3m2!1sen!2spt!4v1451644845504" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <img src="{{ site.baseurl }}/assets/img/prbb.jpg" alt="PRBB" />
-      </div>
-      <div class="section-container">
-          <div class="section-text"> {{ site.contact.text }} </div>
-      </div>
-      <div class="section-container">
-          <div class="section-text"> {{ site.contact.email }} </div>
-      </div>
-    </main>
-    <!--
-    <div class="home-text"> {{ content }} </div>
-    -->
-    <footer class="site-footer">
-      {% if site.github.is_project_page %}
-        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-      {% endif %}
-      <span class="site-footer-credits">Test <a href="https://pages.github.com">GitHub Pages</a>.</span>
-    </footer>
-  </body>
-</html>
-
+  </div>
+</main>
+<main id="contact" class="main-content" role="main">
+  <a name=contact></a>
+  <h2 class="section-title"> Contact </h2>
+  <div class="section-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4776135518086!2d2.1917707507204662!3d41.38543297916256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a30609f1eee1%3A0x81e449abea5aae0e!2sPRBB+Parc+de+Recerca+Biom%C3%A8dica+de+Barcelona!5e0!3m2!1sen!2spt!4v1451644845504" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <img src="{{ site.baseurl }}/assets/img/prbb.jpg" alt="PRBB" />
+  </div>
+  <div class="section-container">
+      <div class="section-text"> {{ site.contact.text }} </div>
+  </div>
+  <div class="section-container">
+      <div class="section-text"> {{ site.contact.email }} </div>
+  </div>
+</main>
+<!--
+<div class="home-text"> {{ content }} </div>
+-->
+<footer class="site-footer">
+  {% if site.github.is_project_page %}
+    <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+  {% endif %}
+  <div class="footer-container">
+    <a href="https://www.facebook.com/gpugrid/">
+      <img class="facebook-icon" src="{{ site.baseurl }}/assets/img/f_logo_RGB-White_58.png" />
+    </a>
+  </div>
+  <div class="footer-container">
+    <a href="https://twitter.com/gdefabritiis">
+      <img class="twitter-icon" src="{{ site.baseurl }}/assets/img/Twitter_Logo_White.png" />
+    </a>
+  </div>
+  <div class="footer-container">
+    <a href="https://www.youtube.com/user/ps3grid">
+      <img class="youtube-icon" src="{{ site.baseurl }}/assets/img/yt_icon_mono_dark.png" />
+    </a>
+  </div>
+</footer>
