@@ -1,34 +1,7 @@
 ---
 permalink: publications/
+layout: header
 ---
-
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
-
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-
-<body>
-    <header class="page-header2" role="banner">
-        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        {% include nav.html %}
-      </header>
-
 <div class="publications-container">
     <p><a href="https://scholar.google.com/citations?hl=en&user=-_kX4kMAAAAJ&view_op=list_works&sortby=pubdate">For recent publications follow up here</a></p>
 
@@ -165,5 +138,3 @@ permalink: publications/
 </ul>
 
 </div>
-</body>
-</html>
