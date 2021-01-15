@@ -2,12 +2,12 @@
 layout: header
 ---
 <main id="tagline" class="main-content" role="main">
-  <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-  <img class="logo" src="{{ site.baseurl }}/assets/img/LOGO_PM_basic.jpg" alt="logo" />
+  <h2 class="project-tagline">{{ site.data.intro.tagline }}</h2>
+  <img class="logo" src="{{ site.data.baseurl }}/assets/img/LOGO_PM_basic.jpg" alt="logo" />
 </main>
 <main id="intro" class="main-content" role="main">
-  <div class="home-text"> {{ page.introduction | default: site.introduction }} </div>
-  <img class="down-arrow" src="{{ site.baseurl }}/assets/img/keyboard_arrow_down-black-24dp.svg" alt="logo" />
+  <div class="home-text"> {{ site.data.intro.text }} </div>
+  <img class="down-arrow" src="{{ site.data.baseurl }}/assets/img/keyboard_arrow_down-black-24dp.svg" alt="logo" />
 </main>
 <main id="highlights" class="main-content" role="main">
   <a name=highlights></a>
@@ -49,21 +49,21 @@ layout: header
   <a name=research></a>
   <h2 class="section-title"> Research </h2>
   <div class="section-container research-lines">
-      <div class="section-text"> <h3 class="section-subtitle">{{ site.research.research_lines.left_title }} </h3> {{ site.research.research_lines.left_text }} </div>
-      <div class="section-text"> <h3 class="section-subtitle">{{ site.research.research_lines.right_title }} </h3> {{ site.research.research_lines.right_text }} </div>
+      <div class="section-text"> <h3 class="section-subtitle">{{ site.data.research.research_lines.left_title }} </h3> {{ site.data.research.research_lines.left_text }} </div>
+      <div class="section-text"> <h3 class="section-subtitle">{{ site.data.research.research_lines.right_title }} </h3> {{ site.data.research.research_lines.right_text }} </div>
   </div>
   <div class="section-container">
       <div class="section-text">
-        <h3 class="section-subtitle software-subtitle">{{ site.research.software.left_title }} </h3>
-        {% for subtext in site.research.software.left_text %}
+        <h3 class="section-subtitle software-subtitle">{{ site.data.research.software.left_title }} </h3>
+        {% for subtext in site.data.research.software.left_text %}
           <div class="section-subtext-container">
             <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
           </div>
         {% endfor %}
         </div>
       <div class="section-text">
-        <h3 class="section-subtitle software-subtitle">{{ site.research.software.right_title }} </h3>
-        {% for subtext in site.research.software.right_text %}
+        <h3 class="section-subtitle software-subtitle">{{ site.data.research.software.right_title }} </h3>
+        {% for subtext in site.data.research.software.right_text %}
           <div class="section-subtext-container">
             <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
           </div>
@@ -75,12 +75,12 @@ layout: header
   <a name=apply></a>
   <h2 class="section-title"> Apply </h2>
   <div class="section-container">
-      <div class="section-text"> {{ site.apply.text }} </div>
+      <div class="section-text"> {{ site.data.apply.text }} </div>
   </div>
   <div class="section-container">
       <div class="section-text">
         <h3 class="section-subtitle"> Open Positions </h3>
-        {% for subtext in site.apply.positions.open %}
+        {% for subtext in site.data.apply.positions.open %}
           <div class="section-subtext-container">
             <a href="/positions/#{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
           </div>
@@ -88,8 +88,8 @@ layout: header
         </div>
       <div class="section-text">
         <h3 class="section-subtitle"> Closed Positions </h3>
-        {{ site.apply.positions.closed.text }}
-        {% for subtext in site.apply.positions.closed.positions %}
+        {{ site.data.apply.positions.closed.text }}
+        {% for subtext in site.data.apply.positions.closed.positions %}
           <div class="section-subtext-container">
             <a href="/positions/#{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
           </div>
@@ -105,10 +105,10 @@ layout: header
     <img src="{{ site.baseurl }}/assets/img/prbb.jpg" alt="PRBB" />
   </div>
   <div class="section-container">
-      <div class="section-text"> {{ site.contact.text }} </div>
+      <div class="section-text"> {{ site.data.contact.text }} </div>
   </div>
   <div class="section-container">
-      <div class="section-text"> {{ site.contact.email }} </div>
+      <div class="section-text"> {{ site.data.contact.email }} </div>
   </div>
 </main>
 <!--
