@@ -97,6 +97,32 @@
             </div>
       </div>
     </main>
+    <main id="apply" class="main-content" role="main">
+      <a name=apply></a>
+      <h2 class="section-title"> Apply </h2>
+      <div class="section-container">
+          <div class="section-text"> {{ site.apply.text }} </div>
+      </div>
+      <div class="section-container">
+          <div class="section-text">
+            <h3 class="section-subtitle"> Open Positions </h3>
+            {% for subtext in site.apply.positions.open %}
+              <div class="section-subtext-container">
+                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+              </div>
+            {% endfor %}
+            </div>
+          <div class="section-text">
+            <h3 class="section-subtitle"> Closed Positions </h3>
+            {{ site.apply.positions.closed.text }}
+            {% for subtext in site.apply.positions.closed.positions %}
+              <div class="section-subtext-container">
+                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+              </div>
+            {% endfor %}
+            </div>
+      </div>
+    </main>
     <!--
     <div class="home-text"> {{ content }} </div>
     -->

@@ -78,6 +78,37 @@ html {
   }
 }
 
+#apply.main-content {
+  max-width: none;
+  margin: 0;
+  padding: 2rem 10rem;
+  padding-top: 0;
+  background-color: rgb(245, 245, 245);
+
+  h3.section-subtitle {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #000050;
+    margin-bottom: 0;
+  }
+
+  .section-text {
+    width: 65%;
+
+    h3.section-subtitle {
+      font-size: 1.8rem;
+      font-weight: bolder;
+      color: #000050;
+      margin-bottom: 0;
+    }
+
+    .section-subtext-container {
+      margin: 1rem;
+    }
+
+  }
+}
+
 div.home-text {
   color: #000050;
   font-size: 1.5rem;
