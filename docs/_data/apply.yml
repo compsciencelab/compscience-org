@@ -1,0 +1,24 @@
+text: We are always looking for talented people who would like to join our laboratory. We praise on diversity of expertises, e.g. mathematics, chemistry, computer science, statistics, physics, biology, biotechnology, etc. If you are a passionate, hard working, self-motivated person with the ambition to do great science, send us an email at gianni.defabritiis@upf.edu.
+positions:
+  open:
+    - link: PhD position
+      url: phd-position-on-abstraction-and-reasoning-challenge-create-an-ai-capable-of-solving-reasoning-tasks-it-has-never-seen-before
+      text: in tackling abstraction and reasoning with AI
+    - link: PhD and Posdoctoral position
+      url: phd-and-postdoctoral-position-on-artificial-intelligence-at-the-computational-science-laboratory-university-pompeu-fabra-barcelona
+      text: in advancing reinforcement learning
+    - link:
+      url:
+      text: If you are interested in doing a specific project idea with us send a CV and motivation letter to gianni.defabritiis@upf.edu
+  closed:
+    text: These positions are closed but we might have similar ones in the future.
+    positions:
+      - link: PhD position
+        url: phd-position-in-machine-learning-for-structural-molecular-biology
+        text: in artificial neural networks in structural bioinformatics
+      - link: PhD position
+        url: phd-position-in-protein-protein-molecular-recognition-and-design
+        text: in protein-protein recognition and design
+      - link: PhD position
+        url: phd-position-in-rational-drug-design-of-intrinsically-disordered-proteins
+        text: in intrinsically disordered proteins

@@ -1,0 +1,26 @@
+<main id="research" class="main-content" role="main">
+  <a name=research></a>
+  <h2 class="section-title"> Research </h2>
+  <div class="section-container research-lines">
+      <div class="section-text"> <h3 class="section-subtitle">{{ site.data.research.research_lines.left_title }} </h3> {{ site.data.research.research_lines.left_text }} </div>
+      <div class="section-text"> <h3 class="section-subtitle">{{ site.data.research.research_lines.right_title }} </h3> {{ site.data.research.research_lines.right_text }} </div>
+  </div>
+  <div class="section-container">
+      <div class="section-text">
+        <h3 class="section-subtitle software-subtitle">{{ site.data.research.software.left_title }} </h3>
+        {% for subtext in site.data.research.software.left_text %}
+          <div class="section-subtext-container">
+            <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+          </div>
+        {% endfor %}
+        </div>
+      <div class="section-text">
+        <h3 class="section-subtitle software-subtitle">{{ site.data.research.software.right_title }} </h3>
+        {% for subtext in site.data.research.software.right_text %}
+          <div class="section-subtext-container">
+            <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+          </div>
+        {% endfor %}
+        </div>
+  </div>
+</main>
