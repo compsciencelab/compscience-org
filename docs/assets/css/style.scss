@@ -15,6 +15,7 @@ html {
   height: 3.5rem;
   position: fixed;
   top: 0;
+  z-index: 2;
 
   .project-name {
     font-size: 1.4rem;
@@ -47,7 +48,7 @@ html {
   max-width: none;
   margin: 0;
   padding: 2rem 10rem;
-  padding-top: 0;
+  padding-top: 3rem;
 
   .section-container.research-lines {
     border-radius: 2rem;
@@ -75,6 +76,56 @@ html {
       background-color: rgb(245, 245, 245);
       padding: 0.75rem;
     }
+  }
+}
+
+#apply.main-content {
+  max-width: none;
+  margin: 0;
+  padding: 2rem 10rem;
+  padding-top: 0;
+  background-color: rgb(245, 245, 245);
+
+  h3.section-subtitle {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #000050;
+    margin-bottom: 0;
+  }
+
+  .section-text {
+    width: 65%;
+
+    h3.section-subtitle {
+      font-size: 1.8rem;
+      font-weight: bolder;
+      color: #000050;
+      margin-bottom: 0;
+    }
+
+    .section-subtext-container {
+      margin: 1rem;
+    }
+
+  }
+}
+
+#contact.main-content {
+  max-width: none;
+  margin: 0;
+  padding: 2rem 10rem;
+  padding-top: 3rem;
+
+  .section-container {
+    margin-bottom: 0;
+  }
+
+  iframe {
+    border-radius: 2rem;
+  }
+
+  img {
+    border-radius: 2rem;
   }
 }
 
@@ -128,6 +179,8 @@ div.section-text {
   padding: 0.5rem;
   text-align: center;
   opacity: 1;
+  margin-top: -3.5rem;
+  padding-top: 4rem;
 }
 
 img.logo {

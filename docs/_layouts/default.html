@@ -97,6 +97,46 @@
             </div>
       </div>
     </main>
+    <main id="apply" class="main-content" role="main">
+      <a name=apply></a>
+      <h2 class="section-title"> Apply </h2>
+      <div class="section-container">
+          <div class="section-text"> {{ site.apply.text }} </div>
+      </div>
+      <div class="section-container">
+          <div class="section-text">
+            <h3 class="section-subtitle"> Open Positions </h3>
+            {% for subtext in site.apply.positions.open %}
+              <div class="section-subtext-container">
+                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+              </div>
+            {% endfor %}
+            </div>
+          <div class="section-text">
+            <h3 class="section-subtitle"> Closed Positions </h3>
+            {{ site.apply.positions.closed.text }}
+            {% for subtext in site.apply.positions.closed.positions %}
+              <div class="section-subtext-container">
+                <a href="{{ subtext.url}}">{{ subtext.link }}</a> {{ subtext.text }}
+              </div>
+            {% endfor %}
+            </div>
+      </div>
+    </main>
+    <main id="contact" class="main-content" role="main">
+      <a name=contact></a>
+      <h2 class="section-title"> Contact </h2>
+      <div class="section-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4776135518086!2d2.1917707507204662!3d41.38543297916256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a30609f1eee1%3A0x81e449abea5aae0e!2sPRBB+Parc+de+Recerca+Biom%C3%A8dica+de+Barcelona!5e0!3m2!1sen!2spt!4v1451644845504" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <img src="{{ site.baseurl }}/assets/img/prbb.jpg" alt="PRBB" />
+      </div>
+      <div class="section-container">
+          <div class="section-text"> {{ site.contact.text }} </div>
+      </div>
+      <div class="section-container">
+          <div class="section-text"> {{ site.contact.email }} </div>
+      </div>
+    </main>
     <!--
     <div class="home-text"> {{ content }} </div>
     -->
