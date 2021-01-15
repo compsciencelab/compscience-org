@@ -48,7 +48,7 @@ html {
   max-width: none;
   margin: 0;
   padding: 2rem 10rem;
-  padding-top: 0;
+  padding-top: 3rem;
 
   .section-container.research-lines {
     border-radius: 2rem;
@@ -114,7 +114,7 @@ html {
   max-width: none;
   margin: 0;
   padding: 2rem 10rem;
-  padding-top: 0;
+  padding-top: 3rem;
 
   .section-container {
     margin-bottom: 0;
@@ -179,6 +179,8 @@ div.section-text {
   padding: 0.5rem;
   text-align: center;
   opacity: 1;
+  margin-top: -3.5rem;
+  padding-top: 4rem;
 }
 
 img.logo {
