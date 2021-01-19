@@ -67,6 +67,11 @@ html {
   padding: 2rem 10rem;
   padding-top: 0;
   background-color: $grey-background-color;
+
+  .section-text {
+    border-radius: 1rem;
+    background-color: white;
+  }
 }
 
 #research.main-content {
