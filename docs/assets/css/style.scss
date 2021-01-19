@@ -3,7 +3,9 @@
 @import "{{ site.theme }}";
 
 $main-color: #1DA1F2; 
-$grey-background: rgb(245, 245, 245);
+$light-main-color: #b6e3ff;
+$grey-background-color: rgb(245, 245, 245);
+$dark-text-color: black;
 
 html {
   scroll-behavior: smooth;
@@ -64,7 +66,7 @@ html {
   margin: 0;
   padding: 2rem 10rem;
   padding-top: 0;
-  background-color: $grey-background;
+  background-color: $grey-background-color;
 }
 
 #research.main-content {
@@ -75,19 +77,12 @@ html {
 
   .section-container.research-lines {
     border-radius: 2rem;
-    background-color:$grey-background;
+    background-color:$grey-background-color;
     margin-bottom: 0;
   }
 
   .section-text {
     width: 45%;
-
-    h3.section-subtitle {
-      font-size: 1.8rem;
-      font-weight: bolder;
-      color: $main-color;
-      margin-bottom: 0;
-    }
 
     h3.software-subtitle {
         margin-bottom: -0.5rem;
@@ -96,10 +91,17 @@ html {
     .section-subtext-container {
       margin: 1rem;
       border-radius: 1rem;
-      background-color: $grey-background;
+      background-color: $grey-background-color;
       padding: 0.75rem;
     }
   }
+}
+
+h3.section-subtitle {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: $dark-text-color;
+  margin-bottom: 0;
 }
 
 #apply.main-content {
@@ -107,24 +109,11 @@ html {
   margin: 0;
   padding: 2rem 10rem;
   padding-top: 0;
-  background-color: $grey-background;
+  background-color: $grey-background-color;
 
-  h3.section-subtitle {
-    font-size: 1.8rem;
-    font-weight: bolder;
-    color: $main-color;
-    margin-bottom: 0;
-  }
 
   .section-text {
     width: 65%;
-
-    h3.section-subtitle {
-      font-size: 1.8rem;
-      font-weight: bolder;
-      color: $main-color;
-      margin-bottom: 0;
-    }
 
     .section-subtext-container {
       margin: 1rem;
@@ -170,23 +159,23 @@ html {
 }
 
 .highlight-icon-container {
-  color: $main-color;
+  color: $dark-text-color;
   margin-right: 1rem;
   margin-left: 1rem;
   width: calc(100%/6);
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 div.section-text {
-  color: $main-color;
+  color: $dark-text-color;
   font-size: 1rem;
   text-align: center;
   padding: 1rem;
 }
 
 .main-content h2 {
-  color: black;
+  color: $dark-text-color;
   font-weight: bolder;
   font-size: 3rem;
   width: 100%;
@@ -252,7 +241,7 @@ a.nav-link:link, a.nav-link:visited {
 }
 
 a.nav-link:hover, a.nav-link:active {
-  color: grey;
+  color: $light-main-color;
 }
 
 .site-footer {
@@ -286,7 +275,7 @@ a.nav-link:hover, a.nav-link:active {
 .publications-container {
   padding: 3.5rem 2rem;
   font-size: 1rem;
-  color: $main-color;
+  color: $dark-text-color;
 
   li {
     margin-bottom: 0.5em;
@@ -296,7 +285,7 @@ a.nav-link:hover, a.nav-link:active {
 .positions-container {
   padding: 3.5rem 2rem;
   font-size: 1rem;
-  color: $main-color;
+  color: $dark-text-color;
 
   h3 {
     margin-top: -3.5rem;
