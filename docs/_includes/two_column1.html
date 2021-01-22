@@ -1,0 +1,14 @@
+<main id="two-column" class="main-content grey-section" role="main">
+  <a name=example-section-link></a>
+  <h2 class="section-title"> {{ site.data.two_column1.title }} </h2>
+  <div class="section-container">
+      <div class="section-text">
+        {% capture two_column1_column1 %} {% include two_column1_column1.md %}{% endcapture %}
+        {{ two_column1_column1 | markdownify }}
+      </div>
+      <div class="section-text">
+        {% capture two_column1_column2 %} {% include two_column1_column2.md %}{% endcapture %}
+        {{ two_column1_column2 | markdownify }}
+      </div>
+  </div>
+</main>

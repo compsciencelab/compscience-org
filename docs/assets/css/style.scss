@@ -2,6 +2,13 @@
 ---
 @import "{{ site.theme }}";
 
+$main-color: #1DA1F2; 
+$light-main-color: #b6e3ff;
+$grey-background-color: rgb(245, 245, 245);
+$dark-text-color: black;
+
+/* General Styles */
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +16,7 @@ html {
 .page-header2 {
   color: $header-heading-color;
   text-align: left;
-  background-color: #000050;
+  background-color: $main-color;
   padding: 0.5rem 1rem !important;
   width: 100%;
   height: 3.5rem;
@@ -25,119 +32,15 @@ html {
   }
 }
 
-#tagline.main-content {
-  padding-top: 3.75rem;
-}
-
-#intro.main-content {
-  max-width: none;
-  margin: 0;
-  padding: 2rem 10rem;
-  padding-top: 0;
-}
-
-#highlights.main-content {
-  max-width: none;
-  margin: 0;
-  padding: 2rem 10rem;
-  padding-top: 0;
-  background-color: rgb(245, 245, 245);
-}
-
-#research.main-content {
-  max-width: none;
-  margin: 0;
-  padding: 2rem 10rem;
-  padding-top: 3rem;
-
-  .section-container.research-lines {
-    border-radius: 2rem;
-    background-color:rgb(245, 245, 245);
-    margin-bottom: 0;
-  }
-
-  .section-text {
-    width: 45%;
-
-    h3.section-subtitle {
-      font-size: 1.8rem;
-      font-weight: bolder;
-      color: #000050;
-      margin-bottom: 0;
-    }
-
-    h3.software-subtitle {
-        margin-bottom: -0.5rem;
-    }
-
-    .section-subtext-container {
-      margin: 1rem;
-      border-radius: 1rem;
-      background-color: rgb(245, 245, 245);
-      padding: 0.75rem;
-    }
-  }
-}
-
-#apply.main-content {
-  max-width: none;
-  margin: 0;
-  padding: 2rem 10rem;
-  padding-top: 0;
-  background-color: rgb(245, 245, 245);
-
-  h3.section-subtitle {
-    font-size: 1.8rem;
-    font-weight: bolder;
-    color: #000050;
-    margin-bottom: 0;
-  }
-
-  .section-text {
-    width: 65%;
-
-    h3.section-subtitle {
-      font-size: 1.8rem;
-      font-weight: bolder;
-      color: #000050;
-      margin-bottom: 0;
-    }
-
-    .section-subtext-container {
-      margin: 1rem;
-    }
-
-  }
-}
-
-#contact.main-content {
-  max-width: none;
-  margin: 0;
-  padding: 2rem 10rem;
-  padding-top: 3rem;
-
-  .section-container {
-    margin-bottom: 0;
-  }
-
-  iframe {
-    border-radius: 2rem;
-  }
-
-  img {
-    border-radius: 2rem;
-  }
-}
-
-div.home-text {
-  color: #000050;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: bold;
+h3.section-subtitle {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: $dark-text-color;
+  margin-bottom: 0;
 }
 
 .section-title {
-  color: #000050;
+  color: $main-color;
   font-weight: bolder;
   font-size: 2.5rem;
   width: 100%;
@@ -153,25 +56,15 @@ div.home-text {
   margin-bottom: 2rem;
 }
 
-.highlight-icon-container {
-  color: #000050;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  width: calc(100%/6);
-  text-align: center;
-  font-weight: bold;
-}
-
 div.section-text {
-  color: #000050;
+  color: $dark-text-color;
   font-size: 1rem;
   text-align: center;
-  font-weight: bold;
   padding: 1rem;
 }
 
 .main-content h2 {
-  color: #000050;
+  color: $dark-text-color;
   font-weight: bolder;
   font-size: 3rem;
   width: 100%;
@@ -180,35 +73,181 @@ div.section-text {
   text-align: center;
   opacity: 1;
   margin-top: -3.5rem;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
+  margin-bottom: 2rem;
 }
 
-img.logo {
-  width: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.main-content h3 {
+  color: $dark-text-color;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  opacity: 1;
 }
 
-img.down-arrow {
-  width: 6rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+main.main-content {
+  max-width: none;
+  margin: 0;
+  padding: 2rem 10rem;
+  padding-top: 0;
 }
 
-img.highlight-icon {
-  width: 7rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.grey-section {
+  background-color: $grey-background-color;
 }
+
+/* End General Styles */
+
+/* Section-Specific Styles */
+
+#intro.main-content {
+  background-color: $main-color;
+  color: white;
+
+  img.logo {
+    width: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  img.down-arrow {
+    width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    color: white;
+    padding: 0;
+    margin-top: 3.75rem;
+    margin-bottom: 0;
+  }
+
+  .tagline-container {
+    padding-top: 3.75rem;
+  }
+
+  .text-container {
+    max-width: none;
+    margin: 0;
+    padding: 2rem 10rem;
+    padding-top: 0;
+
+    div.home-text {
+      color: white; 
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+#highlights.main-content {
+  background-color: $grey-background-color;
+
+  img.highlight-icon {
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .highlight-icon-container {
+    color: $dark-text-color;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: calc(100%/6);
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .section-text {
+    border-radius: 1rem;
+    background-color: white;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+#research.main-content {
+  padding-top: 3rem;
+
+  .section-container.research-lines {
+    border-radius: 2rem;
+    background-color:$grey-background-color;
+    margin-bottom: 0;
+  }
+
+  .section-text {
+    width: 45%;
+
+    h3.software-subtitle {
+        margin-bottom: -0.5rem;
+    }
+
+    .section-subtext-container {
+      margin: 1rem;
+      border-radius: 1rem;
+      background-color: $grey-background-color;
+      padding: 0.75rem;
+    }
+  }
+}
+
+#apply.main-content {
+  background-color: $grey-background-color;
+
+  h2.section-title {
+    margin-bottom: 0;
+  }
+
+  .positions-text-container {
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: white;
+  }
+
+  .apply-text {
+    font-size: 1.2rem;
+  }
+
+  .section-text {
+    width: 65%;
+
+    .section-subtext-container {
+      margin: 1rem;
+    }
+  }
+}
+
+#contact.main-content {
+  padding-top: 3rem;
+
+  iframe {
+    border-radius: 2rem;
+    margin: 1rem;
+  }
+
+  img {
+    border-radius: 2rem;
+    margin: 1rem;
+  }
+
+  .section-text{
+    font-size: 1.1rem;
+  }
+}
+
+/* End Section-Specific Styles */
 
 /* Navigation wrapper */
 
@@ -237,15 +276,21 @@ a.nav-link:link, a.nav-link:visited {
 }
 
 a.nav-link:hover, a.nav-link:active {
-  color: grey;
+  color: $light-main-color;
 }
 
+/* End Navigation Wrapper */
+
+/* Footer */
+
 .site-footer {
-  background-color: #000050;
+  background-color: $main-color;
   height: 6rem;
-  padding: 1rem;
+  border-top: none;
   display: flex;
   justify-content: space-evenly;
+  padding: 1rem;
+  margin-top: 0;
 }
 
 .footer-container {
@@ -268,23 +313,33 @@ a.nav-link:hover, a.nav-link:active {
   max-height: 90%;
 }
 
+/* End Footer */
+
+/* Publications Page */
+
 .publications-container {
   padding: 3.5rem 2rem;
   font-size: 1rem;
-  color: #000050;
+  color: $dark-text-color;
 
   li {
     margin-bottom: 0.5em;
   }
 }
 
+/* End Publications Page */
+
+/* Positions Page */
+
 .positions-container {
   padding: 3.5rem 2rem;
   font-size: 1rem;
-  color: #000050;
+  color: $dark-text-color;
 
   h3 {
     margin-top: -3.5rem;
     padding-top: 3.5rem;
   }
 }
+
+/* End Positions Page */
