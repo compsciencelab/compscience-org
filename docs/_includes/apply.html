@@ -2,10 +2,10 @@
   <a name=apply></a>
   <h2 class="section-title"> Apply </h2>
   <div class="section-container">
-      <div class="section-text"> {{ site.data.apply.text }} </div>
+      <div class="section-text apply-text"> {{ site.data.apply.text }} </div>
   </div>
   <div class="section-container">
-      <div class="section-text">
+      <div class="section-text positions-text-container">
         <h3 class="section-subtitle"> Open Positions </h3>
         {% for subtext in site.data.apply.positions.open %}
           <div class="section-subtext-container">
@@ -13,7 +13,7 @@
           </div>
         {% endfor %}
         </div>
-      <div class="section-text">
+      <div class="section-text positions-text-container">
         <h3 class="section-subtitle"> Closed Positions </h3>
         {{ site.data.apply.positions.closed.text }}
         {% for subtext in site.data.apply.positions.closed.positions %}
