@@ -9,20 +9,20 @@ software:
     - link: HTMD
       url: https://www.htmd.org/
       text: is a Python platform for computational biology, including molecular simulations, docking, Markov state models, molecule manipulation, build tools for Amber and Charmm, visualization (webGL and VMD), adaptive sampling and more. Imagine setting up an entire computational experiment in a single, simple Python script.
-    - link: ACEMD
+    - link: ACEMD/OpenMM
       url: https://www.acellera.com/acemd
-      text: has pioneered the use of GPUs for molecular simulations allowing for high-throughput simulations and ultimately leading to HTMD. ACEMD is still one of top molecular dynamics code, simple to use with a NAMD like syntax and compatible with input files from Charmm and Amber.
+      text: has pioneered the use of GPUs for molecular simulations allowing for high-throughput simulations and ultimately leading to HTMD. ACEMD is still one of fastest molecular dynamics code and compatible with input files from Charmm and Amber. ACEMD is now based on OpenMM.
+      link: PyTorchRL
+      url: https://github.com/PyTorchRL/pytorchrl
+      text: is a scalable and modular reinforcement learning framework in PyTorch. Use it simply write new algorithms and scale them up for real performance.
   right_title: Web Resources
   right_text:
     - link: Playmolecule
       url: https://www.playmolecule.org/
-      text: is a WebGL-enabled site that contains our methods, predictors and machine learning approaches, most of which are publically available.
+      text: is an application-based site that contains methods, predictors and machine learning approaches, most of which are publically available for drug discovery. Currently managed by Acellera.com.
     - link: Computational Science Laboratory GitHub
       url: https://github.com/compsciencelab
       text: contains more tools. Follow us there.
-    - link: HTMD Github Repository
-      url: https://github.com/acellera/htmd
-      text: is the main HTMD repository publicly accessible in Github. Contribute!
-    - link: Acellera YouTube Channel
-      url: https://www.youtube.com/user/acelleralive
-      text: contains posts from Acellera with a lot of useful material.
+    - link: GPUGRID.net
+      url: http://gpugrid.net
+      text: is one of the largest distributed computing project worldwide. GPUGRID pioneered the use of GPUs in distributed computing. 
