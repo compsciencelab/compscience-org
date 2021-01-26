@@ -252,10 +252,11 @@ main.main-content {
 /* Navigation wrapper */
 
 nav {
-  padding-left: 37%;
   z-index: 2;
   overflow-y: hidden;
   display: inline;
+  float: right;
+  margin-top: 0.25rem;
 }
 
 .nav-menu {
