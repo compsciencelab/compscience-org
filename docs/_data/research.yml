@@ -14,7 +14,7 @@ software:
       text: has pioneered the use of GPUs for molecular simulations allowing for high-throughput simulations and ultimately leading to HTMD. ACEMD is still one of fastest molecular dynamics code and compatible with input files from Charmm and Amber. ACEMD is now based on OpenMM.
     - link: PyTorchRL
       url: https://github.com/PyTorchRL/pytorchrl
-      text: is a scalable and modular reinforcement learning framework in PyTorch. Use it simply write new algorithms and scale them up for real performance.
+      text: is a scalable and modular reinforcement learning framework in PyTorch. Use it to write new algorithms and scale them up for real performance. This code currently hold the SOTA on Obstacle tower challenge by Unity3D.
   right_title: Web Resources
   right_text:
     - link: Playmolecule
