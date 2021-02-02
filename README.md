@@ -37,7 +37,7 @@ Within `docs`:
 
 ### Copying the two-column layout
 
-To make the second column section (for example), copy and paste (or rename, if first two-column section) `two_column1_column1.md`, `two_column1_column2.md`, and `two_column1.html` in the `_includes` directory. Change the names of the files, but keep some identifier in the Markdown filenames for which column is which. Change the Markdown filenames in the corresponding HTML file (originally `two_column1.html`). You can place the two-column section anywhere you want on the Home page by adding an `{% includes ... %}` statement there. Then you can edit the contents of the columns by editing the Markdown files from earlier.
+To make the second column  section (for example), copy and paste (or rename, if first two-column section) `two_column1_column1.md`, `two_column1_column2.md`, and `two_column1.html` in the `_includes` directory. Change the names of the files, but keep some identifier in the Markdown filenames for which column is which. Change the Markdown filenames in the corresponding HTML file (originally `two_column1.html`). You can place the two-column section anywhere you want on the Home page by adding an `{% includes ... %}` statement there. Then you can edit the contents of the columns by editing the Markdown files from earlier.
 
 
 ### Markdown
