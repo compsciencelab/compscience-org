@@ -1,8 +1,8 @@
 research_lines:
-  left_title: Biomedicine
-  left_text: We use computations, as physics-based simulations and machine learning to provide novel, innovative approaches in biomedicine
+  left_title: Computer Simulations
+  left_text: Physics-based simulations and modern machine learning methods provide innovative methodological approaches in biomedicine which can be applied to drug design, protein folding, protein-protein interactions, etc. We created GPUGRID.net, the second largest distributed computing project harnessing several thousands GPUs. We are core project leaders of OpenMM/ACEMD, one of the leading molecular dynamics packages. We created PlayMolecule, a publicly-available platform offering molecular simulations and machine-learning-powered assets for drug discovery used by a wide community of users.  
   right_title: Machine Intelligence
-  right_text: We develop machine learning models with the aim to attain in specific environments intelligent, useful behavior using reinforcement learning and deep learning
+  right_text: Understanding and replicating human level intelligence in machines is of great importance for the progress of humanity. We look at realistic 3D simulated environments for navigation and robotic manipulation to develop learning methods which can be transferred to the real world. We are particularly interested in solving hard robotic challenges by training intelligent agents using super-scalable population learning methods using GPUGRID and low sample learning (arXiv:2007.03328) via imitation, self-imitation and model-based. Recently, we ranked second in the Unity obstacle tower challenge, an AI testbed for navigation, puzzle solving, etc. We currently own the SOTA on this challenge (arXiv:2007.02622). 
 software:
   left_title: Software
   left_text:
@@ -15,7 +15,7 @@ software:
     - link: PyTorchRL
       url: https://github.com/PyTorchRL/pytorchrl
       text: is a scalable and modular reinforcement learning framework in PyTorch. Use it to write new algorithms and scale them up for real performance. This code currently hold the SOTA on Obstacle tower challenge by Unity3D.
-  right_title: Web Resources
+  right_title: Webs
   right_text:
     - link: Playmolecule
       url: https://www.playmolecule.org/
