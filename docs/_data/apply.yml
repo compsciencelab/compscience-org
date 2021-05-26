@@ -2,7 +2,8 @@ text: We are always looking for talented people who would like to join our labor
 positions:
   open:
     - link: Posdoctoral position in machine intelligence
-      url: assets/jobs/PD2021_postdoc_RL.pdf 
+      url: assets/jobs/PD2021_postdoc_RL.pdf
+      text: 
     - link:
       url:
       text: If you are interested in doing a specific project idea with us send a CV and motivation letter to gianni.defabritiis@upf.edu
@@ -11,7 +12,8 @@ positions:
     positions:
     - link: PhD and Posdoctoral position
       url: positions/#phd-and-postdoctoral-position-on-artificial-intelligence-at-the-computational-science-laboratory-university-pompeu-fabra-barcelona
-     - link: PhD position
+      text:
+    - link: PhD position
       url: positions/#phd-position-on-abstraction-and-reasoning-challenge-create-an-ai-capable-of-solving-reasoning-tasks-it-has-never-seen-before
       text: in tackling abstraction and reasoning with AI
     - link: PhD position
