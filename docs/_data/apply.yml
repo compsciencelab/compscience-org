@@ -4,6 +4,9 @@ positions:
     - link: Posdoctoral position in machine intelligence
       url: assets/jobs/PD2021_postdoc_RL.pdf
       text: 
+    - link: Posdoctoral position in neural network potentials for molecular simulations
+      url: assets/jobs/PD2021MD.pdf
+      text: 
     - link:
       url:
       text: If you are interested in doing a specific project idea with us send a CV and motivation letter to gianni.defabritiis@upf.edu
