@@ -1,8 +1,11 @@
-text: We are always looking for talented people who would like to join our laboratory. We praise on diversity of expertises, e.g. mathematics, chemistry, computer science, statistics, physics, biology, biotechnology, etc. If you are a passionate, hard working, self-motivated person with the ambition to do great science, send us an email at gianni.defabritiis@upf.edu.
+text: We are always looking for talented people who would like to join our laboratory. We praise on diversity of expertises, e.g. mathematics, 
+chemistry, computer science, statistics, physics, biology, biotechnology, etc. If you are a passionate, hard working, self-motivated person 
+with the ambition to do great science, send us an email at gianni.defabritiis@upf.edu.
 positions:
   open:
     - link: Postdoctoral position in machine learning quantum chemistry
-       url: assets/jobs/PD202102QC.pdf
+      url: assets/jobs/PD202102QC.pdf
+      text:
     - link: Posdoctoral position in machine intelligence
       url: assets/jobs/PD2021_postdoc_RL.pdf
       text: 
@@ -10,8 +13,8 @@ positions:
       url: assets/jobs/PDPHD2021MD.pdf
       text: 
   closed:
-    text: These positions are closed but we might have similar ones in the future.
+    text: If you are interested in doing a specific project idea with us send a CV and motivation letter to gianni.defabritiis@upf.edu
     positions:
     - link: 
       url: 
-      text: If you are interested in doing a specific project idea with us send a CV and motivation letter to gianni.defabritiis@upf.edu
+      text: 
