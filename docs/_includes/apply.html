@@ -1,3 +1,44 @@
+
+<main id="apply"  class="row row-custom main-content-custom" >
+  <div class="row row-custom">
+    <div class="col-sm-12 center_sm" >
+      <h3 class="sect-title">Apply</h3>
+    </div>
+  </div>
+  <div class="row row-custom">
+    <div class="col-sm-12  center_sm" >    
+      <div class="col-container text-highlight">
+        {{ site.data.apply.text }}
+
+      </div>  
+    </div>
+  </div>
+
+  <div class="row row-custom">
+    <div class="col-lg col-container">
+      <div class="shadow rounded-lg " >
+        <h4>Open Positions</h4>
+        {% for subtext in site.data.apply.positions.open %}
+          <p>
+            <a href="{{subtext.url}}">{{subtext.link}}</a>
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <div class="col-lg col-container">
+      <div class="shadow rounded-lg " >
+        <h4>Closed Positions</h4>
+          <p>
+             {{site.data.apply.positions.closed.text}}
+          </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- 
 <main id="apply" class="main-content" role="main">
   <a name=apply></a>
   <h2 class="section-title"> Apply </h2>
@@ -23,4 +64,4 @@
         {% endfor %}
         </div>
   </div>
-</main>
+</main> -->

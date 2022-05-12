@@ -1,14 +1,14 @@
 # Belongs at: /_data/navigation.yml
 
 - title: Home
-  anchor: home
+  anchor: intro
 - title: Highlights
   anchor: highlights
 - title: Research
   anchor: research
 - title: Apply
   anchor: apply
-- title: Publications
-  anchor: /publications
 - title: Contact
   anchor: contact
+- title: Publications
+  anchor: /publications

@@ -1,14 +1,22 @@
 <!-- Belongs at: /_includes/nav.html -->
 
 <!-- Then we build the nav bar. -->
-<nav>
-    <ul class="nav-menu">
-    {% for entry in site.data.nav %}
-        {% if page.url != "/publications/" or entry.title != "Publications" %}
-        <li class="nav-list-item" {{ current }}>
-            <a class="nav-link" href="{% if page.url != "/" and entry.title !="Publications" %}/{% endif %}{% if entry.title != "Publications" %}#{% endif %}{{ entry.anchor }}">{{ entry.title }}</a>
-        </li>
-        {% endif %}
-    {% endfor %}
-    </ul>
+
+
+<nav class="navbar navbar-expand-md fixed-top  navbar-custom-color nav-custom-small"> 
+    <span class="navbar-text">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    </span>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        {% for entry in site.data.nav %}
+            <li class="nav-list-item nav-item" {{ current }}>
+                <a class="nav-link {% if page.url == "/publications/" and entry.title == "Publications" %}active{% endif %}" href="{% if page.url != "/" and entry.title !="Publications" %}/{% endif %}{% if entry.title != "Publications" %}#{% endif %}{{ entry.anchor }}">{{ entry.title }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
 </nav>

@@ -1,0 +1,32 @@
+highlights:
+  - title: "PlayMolecule"
+    content:
+      - type: string
+        val: "PlayMolecule is a platform for drug discovery and structural biology applications based on physics-based simulations and deep learning. Try it out "
+      - type: link
+        val: "here"
+        url: "http://www.playmolecule.org"
+      - type: string
+        val: "."
+  - title: "Unity Obstacle Tower RL challenge"
+    content:
+      - type: string
+        val: "We classified second at the Unity obstacle tower challenge, where an agent had to navigate a complex 3D environment and solve tasks. Here is the agent in action: "
+      - type: link
+        val: Video
+        url: "https://www.youtube.com/watch?v=EpYLRZHKmBs&t=30s"
+      - type: string
+        val: ", and the Unity "
+      - type: link
+        val: blog
+        url: "https://blogs.unity3d.com/2019/08/07/announcing-the-obstacle-tower-challenge-winners-and-open-source-release/"
+      - type: string
+        val: " post here."
+  - title: "LogP SAMPL 2019 challenge"
+    content:
+      - type: string
+        val: "We scored second to the logP small molecule blind prediction challenge."
+  - title: "D3R 2018 challenge"
+    content:
+      - type: string
+        val: "We won two sub-challenges in the D3R 2018 drug discovery blind challenge in collaboration with Acellera related to binding affinity and pose prediction of protein-ligand complexes."

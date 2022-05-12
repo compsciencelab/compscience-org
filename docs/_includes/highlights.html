@@ -1,6 +1,33 @@
-<main id="highlights" class="main-content" role="main">
+
+<main id="highlights"  class="row row-custom main-content-custom" >
+  <div class="row row-custom">
+    <div class="col-sm-12 center_sm" >
+      <h3 class="sect-title">Highlights</h3>
+    </div>
+  </div>
+  <div class="row row-custom">
+<!--    <div class="col-sm-12 text-highlight center_sm" >
+aa aaa
+    </div>-->
+    
+    {% for highlight in site.data.highlights.highlights %}
+    <div class="col-lg col-container">
+      <div class="shadow rounded-lg " >
+        <h4>{{ highlight.title }}</h4>
+        {% for element in highlight.content %}{% if  element.type == "link" %}<a href="{{element.url}}">{{element.val}}</a>{% else %}{{element.val}}{% endif %}{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    
+
+  </div>
+</main>
+
+
+
+<!-- <main id="highlights" class="main-content row" role="main">
   <a name=highlights></a>
-  <h2 class="section-title"> Highlights </h2>
+  <h3 class="section-title display-2"> Highlights </h3>
   <div class="section-container">
       <div class="section-text">PlayMolecule is a platform for drug discovery and structural biology applications based on physics-based simulations and deep learning. Try it out <a href=http://www.playmolecule.org> here </a></div>
       <div class="section-text">Unity Obstacle Tower RL challenge. We classified second at the Unity obstacle tower challenge, where an agent had to navigate a complex 3D environment and solve tasks. Here is the agent in action: <a href=https://www.youtube.com/watch?v=EpYLRZHKmBs&t=30s>Video</a>, and the Unity <a href=https://blogs.unity3d.com/2019/08/07/announcing-the-obstacle-tower-challenge-winners-and-open-source-release/>blog</a> post here </div>
@@ -9,4 +36,4 @@
   </div>
   <div class="section-container">
   </div>
-</main>
+</main> -->
