@@ -14,6 +14,8 @@ research:
       - acemd.png
       - htmd.png
       - pytorch.png
+      - openmm.png
+      - torchmd.png
     content: 
       - title: HTMD
         is_list: true
@@ -39,6 +41,22 @@ research:
             url:  "https://github.com/PyTorchRL/pytorchrl"
           - type: "string"
             val: " is a scalable and modular reinforcement learning framework in PyTorch. Use it to write new algorithms and scale them up for real performance. This code currently hold the SOTA on Obstacle tower challenge by Unity3D."
+      - title: OpenMM
+        is_list: true
+        text: 
+          - type: "link"
+            val: "OpenMM"
+            url:  "https://openmm.org/"
+          - type: "string"
+            val: "is a high-performance toolkit for molecular simulation." #Description here 
+      - title: TorchMD
+        is_list: true
+        text: 
+          - type: "link"
+            val: "TorchMD"
+            url:  "https://github.com/torchmd/torchmd"
+          - type: "string"
+            val: "- A deep learning framework for molecular simulations." 
   - title: "Online resources"
     image: 
       - playmolecule.png
