@@ -1,76 +1,54 @@
-<main id="research"  class="row row-custom main-content-custom sect-color" >
+<main id="research" class="row row-custom main-content-custom sect-color">
   <div class="row row-custom">
-    <div class="col-sm-12 center_sm" >
+    <div class="col-sm-12 center_sm">
       <h3 class="sect-title">Research</h3>
     </div>
   </div>
-  {% for res_sect in site.data.research.research %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% for res_sect in site.data.research.research %} {% capture thecycle %}{%
+  cycle 'odd', 'even' %}{% endcapture %}
   <div class="row row-custom">
-    <div class="col-lg-6 sidebyside-col 
-    {% if thecycle == 'odd' %}
-      left-col
-      order-xs-1
-    {% else %}
-      right-col
-      order-xs-1
-      order-lg-2
-    {% endif %}
-     " >
-          <h4>{{res_sect.title }}</h4>
-          {% for res_item in res_sect.content %} 
-            <h5>{{res_item.title}}</h5>
-            <p>
-              {% if res_item.is_list %}
-                {% for element in res_item.text %}
-                  {% if  element.type == "link" %}<a href="{{element.url}}">{{element.val}}</a>{% else %}{{element.val}}{% endif %}
-                {% endfor %}
-              {% else %}
-                {{res_item.text}}
-              {% endif %}
-            </p>
-          {% endfor %}
-      </div>
-      <div class="col-lg-6 sidebyside-col my-auto
-      {% if thecycle == 'odd' %}
-      right-col
-      {% else %}
-        left-col
-      {% endif %}
-      " >
-      {% if res_sect.image %}
-        {% if res_sect.image.size > 1 %}
-          <div class="container-fluid">
-            <div class="row row-custom">
-              {% for col_img in res_sect.image  %}
-                <div class="col-xs my-auto 
-                {% if thecycle == 'odd' %}
-                  img-right-left-resp
-                {% else %}
-                  img-right-align-resp
-                {% endif %}
-                " >
-                  <img class="rounded-lg img-fluid img-responsive-custom" src="{{ site.baseurl }}/assets/img/{{ col_img }}"  style="width:200px;" />
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        {% else %}
-            <img class="rounded-lg img-fluid img-responsive-custom" src="{{ site.baseurl }}/assets/img/{{res_sect.image.first }}" style="height:550px;width:550px;" />
-        {% endif %} 
-
-      {% else %}
-        [Image]
-      {% endif %}
-      </div>
-      
-
+    <div
+      class="col-lg-6 sidebyside-col {% if thecycle == 'odd' %} left-col order-xs-1 {% else %} right-col order-xs-1 order-lg-2 {% endif %}"
+    >
+      <h4>{{res_sect.title }}</h4>
+      {% for res_item in res_sect.content %}
+      <h5>{{res_item.title}}</h5>
+      <p>
+        {% if res_item.is_list %} {% for element in res_item.text %} {% if
+        element.type == "link" %}<a href="{{element.url}}">{{element.val}}</a>{%
+        else %}{{element.val}}{% endif %} {% endfor %} {% else %}
+        {{res_item.text}} {% endif %}
+      </p>
+      {% endfor %}
     </div>
+    <div
+      class="col-lg-6 sidebyside-col my-auto {% if thecycle == 'odd' %} right-col {% else %} left-col {% endif %}"
+    >
+      {% if res_sect.image %} {% if res_sect.image.size > 1 %}
+      <div class="container-fluid">
+        <div class="row row-custom">
+          {% for col_img in res_sect.image %}
+          <div class="col-xs my-auto img-centered">
+            <img
+              class="rounded-lg img-fluid img-responsive-custom"
+              src="{{ site.baseurl }}/assets/img/{{ col_img }}"
+              style="width: 200px"
+            />
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% else %}
+      <img
+        class="rounded-lg img-fluid img-responsive-custom"
+        src="{{ site.baseurl }}/assets/img/{{res_sect.image.first }}"
+        style="height: 550px; width: 550px"
+      />
+      {% endif %} {% else %} [Image] {% endif %}
+    </div>
+  </div>
   {% endfor %}
-
-
 </main>
-
 
 <!-- <main id="research" class="main-content" role="main">
   <a name=research></a>
